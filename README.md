@@ -1,4 +1,4 @@
 # dump-curlopts
 script that dumps the integer optcodes for each curl_easy_setopt option
 
-haven't really tested it, but could come in handy to anyone trying to reverse a network stack based on libcurl. since the header file doesn't give const definitions.
+curl.h does not provide exact consnant values for each curlopt code, so this script parses the file and autogenerates constant definitions. I could only see this being useful to anyone else trying to reverse a libcurl network stack.
